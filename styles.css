@@ -174,7 +174,10 @@ section.project-details.bg-light.ella-bg .project-image img.w-100 {
   width: 55%;
 }
 .project-text.m-0.wireframe {
-  padding: 0px 50px 0 50px;
+  padding: 50px 0px 0 100px;
+}
+.model-content.prototype ul {
+  color: #fff;
 }
 
 @keyframes typing {
@@ -518,13 +521,13 @@ section.skills {
   padding: 50px;
   width: 48%;
   margin: 0px 0 10px;
-  min-height: 160px;
   align-items: center;
   display: flex;
   justify-content: center;
   text-align: center;
   font-weight: 800;
   text-transform: uppercase;
+  min-height: 200px;
 }
 
 .contact-us {
