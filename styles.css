@@ -311,6 +311,8 @@ section.featured-project.works {
   margin: 0;
   overflow: hidden;
   border: 1px solid transparent;
+  background: #3838385e;
+  padding: 80px;
 }
 
 .works .project-box figure img {
