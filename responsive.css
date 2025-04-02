@@ -48,14 +48,14 @@
     width: 100%;
   }
   .works .project-box .content-box1 .inner h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 0;
-  }
+}
   .works .project-box .content-box1 .inner h3 span {
     display: inline-block;
-    font-size: 13vw;
+    font-size: 10vw;
     margin-left: 0;
-  }
+}
   .custom-link .lines {
     display: none;
   }
@@ -189,6 +189,12 @@ nav#navbar {
     right: 10px;
     background: #000;
     padding: 10px;
+}
+button.btn.btn-portfolio {
+    background: #cb6ce6;
+    border: 0;
+    padding: 17px 20px;
+    cursor: pointer;
 }
 
 
