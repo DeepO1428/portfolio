@@ -86,6 +86,9 @@ nav.navbar-header ul li a:hover {
   background: #cb6ce6;
 }
 
+
+
+
 .full-width-banner {
   background: #ffffff;
   padding: 60px 0 30px;
@@ -156,14 +159,14 @@ section.project-details.bg-light.ella-bg::before {
 .model-content p {
   color: #fff;
   padding: 0px 20px 0;
+  margin: 5px 0 0;
 }
 .step2 .model-content {
   background: #cb6ce6;
-  min-height: 570px;
+  min-height: 470px;
 }
 .step2 .model-content h3 {
-
-  padding: 25px 25px 0;
+  padding: 5px 25px 0;
 }
 section.project-details.bg-light.ella-bg .project-image img {
     width: 100%;
@@ -223,7 +226,7 @@ button.btn.btn-portfolio a {
   overflow: hidden;
   width: 100%;
   height: 680px;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .featured-project .background-video {
@@ -605,7 +608,7 @@ section.skills {
 }
 
 section.featured-project.work-detail {
-  height: 550px;
+  height: 450px;
 }
 .heading-work {
   text-align: center;
@@ -663,7 +666,7 @@ section.related-projects.skills img {
 
 section.related-projects.skills img {
   width: 100%;
-  height: 320px;
+  height: 260px;
   object-fit: cover;
 }
 .model-content h3 {
@@ -679,6 +682,57 @@ section.related-projects.skills img {
   text-decoration: none;
 }
 
+/****water researcj***/
+section.project-details.bg-light.water-bg {
+  background: url('images/water-bgg.jpg') no-repeat center center;
+  background-size: cover;
+  height: auto;
+  z-index: 9;
+  padding: 35px 0;
+  position: relative;
+}
+section.project-details.bg-light.water-bg::before {
+  content: '';
+  background-color: #ffffffab;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+section.project-details.bg-light.water-bg.lightt::before {
+    background-color: #ffffffd6;
+}
+section.project-details.bg-light.water-bg .project-image img.w-100 {
+  width: 100%;
+}
+
+section.featured-project.work-detail.social-details {
+  background: url('images/banner-ss.jpg') no-repeat center center;
+  background-size: cover;
+  height: 350px;
+  z-index: 9;
+  padding: 35px 0;
+}
+section.featured-project.work-detail.social-details::before {
+  content: '';
+  background-color: #020202c9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+section.video-gallery {
+  background: #181818;
+  padding: 4rem 0;
+}
+.video-box p {
+  font-size: 26px;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -692,168 +746,29 @@ section.related-projects.skills img {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 700px){
-  [class*="col-"] {
-    width: 100%;
-  }
-  
-
-
-header img {
-  width: 140px;
-}
-nav.navbar-header ul li {
-  display: block;
-  margin: 20px 1px;
-}
-nav.navbar-header ul li a {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  padding: 8px 20px;
-}
-.p-0 {
-  padding: 15px;
-}
-.homepage-text h1 {
-  font-size: 40px;
-  
-}
-.full-width-banner {
-  background: #ffffff;
-  padding: 15px 0;
-}
-.featured-project {
-  height: auto;
-  padding: 30px 0;
-}
-.featured-project h2 {
-  font-size: 30px;
-  margin: 0 0 10px;
-}
-.works .project-box {
-  padding: 20px 0;
-}
-.works .project-box figure {
-  width: 100%;
-}
-.works .project-box .content-box1 {
-  width: 100%;
-}
-.works .project-box .content-box1 .inner h3 {
-  font-size: 4rem;
-  margin-left: 0;
-}
-.works .project-box .content-box1 .inner h3 span {
-  display: inline-block;
-  font-size: 13vw;
-  margin-left: 0;
-}
-.custom-link .lines {
+.menu-toggle {
   display: none;
-}
-.custom-link a {
-  display: block;
-}
-.custom-link b {
-  font-weight: 600;
-  display: block;
-  margin-left: 0;
-  text-align: center;
-}
-.works .project-box:nth-child(2n+2) .content-box1 {
-  order: 2;
-}
-.get-in-touch p {
-  font-size: 19px;
-  width: 100%;
-  margin: 0 auto 30px;
-  line-height: 35px;
-}
-.sticky-footer {
-  text-align: center;
-}
-.sticky-footer img {
-  width: 43%;
-}
-.contact-us h1 {
-  font-size: 40px;
-}
-.contact-us p {
-  font-size: 18px;
-  width: 100%;
-  margin: 0 auto 30px;
-  line-height: 25px;
-  text-align: center;
-}
-.contact-form {
-  background: #cb6ce6;
-  padding: 21px 15px;
-}
-.contact-image {
-  background: #fff;
-  text-align: center;
-  padding: 2rem 2rem 0;
-  min-height: 310px;
-}
-.homepage-text.about p {
-  color: #fff;
-  width: 100%;
-}
-.homepage-text.about h1 {
-  color: #fff;
-  font-size: 50px;
-}
-.about-banner {
-  height: 450px;
-}
-.skills h1 {
-  font-size: 40px;
-}
-section.skills {
-  background: #111111;
-  padding: 30px 0;
-}
-.skills-content ul li {
-  font-size: 25px;
-  background: #cb6ce6;
-  padding: 20px;
-  width: 100%;
-  margin: 0px 0 10px;
-  min-height: 130px;
-}
-.heading-work {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-}
-.featured-project .heading-work h2 {
-  font-size: 50px;
-}
-.featured-project .heading-work h6 {
-  font-size: 20px;
-  line-height: 30px;
-}
-section.featured-project.work-detail {
-  height: 400px;
-}
-section.project-details {
-  padding: 30px 0;
-}
-.project-text {
-  margin-top: 0rem;
-}
-.project-text h1 {
-  font-size: 40px;
-}
-.project-text p {
-  font-size: 20px;
-  width: 100%;
-  line-height: 30px;
-}
-.project-image img {
-  width: 100%;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 999;
 }
 
+.menu-toggle span {
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  border-radius: 3px;
 }
+
+/* SHOW HAMBURGER ON SMALL SCREENS */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+

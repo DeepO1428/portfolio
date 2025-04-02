@@ -4,6 +4,7 @@
   <title>Portfolio-Amandeep Kaur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
@@ -13,13 +14,21 @@
   <!-----header start here---->
   <header class="container">
     <a href="index.html"><img src="images/logo-dark.png" alt="Amandeep Kaur Logo"></a>
+  
+    <!-- 🔥 ADD THIS BLOCK -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
     <div class="row">
       <div class="col-12">
-        <nav class="navbar-header">
+        <nav class="navbar-header" id="navbar">
           <ul>
-            <li><a  href="index.html">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a class="active" href="menu.html">My Projects</a></li>
+            <li><a href="mywork.html">My Projects</a></li>
             <li><a href="contact.html">Get in Touch</a></li>
           </ul>
         </nav>
@@ -83,12 +92,27 @@
               <div class="inner"> 
                 <small>AMAZING USER INTERFACE &amp; SMOOTH INTERACTION</small>
                 <h3><span>Case</span>Study</h3>
-                <div class="custom-link"> <a href="work-detail.html">
+                <div class="custom-link"> <a href="images/case-study.pdf" target="_blank">
                   <div class="lines"> <span></span> <span></span> </div>
                   <b>LEARN MORE</b></a> </div>
               </div>
             </div>
           </div>
+
+          <div class="project-box">
+            <figure> 
+              <a href="#"><img src="images/socialmedia.jpg" alt="Image"></a>
+            </figure>
+            <div class="content-box1">
+              <div class="inner"> <small>Social Media &amp; Projects</small>
+                <h3><span> Social Media </span> Content Lab </h3>
+                <div class="custom-link"> <a href="social-media.html">
+                  <div class="lines"> <span></span> <span></span> </div>
+                  <b>LEARN MORE</b></a> </div>
+              </div>
+            </div>
+          </div>
+
       </div>
     </div>
   </section>
@@ -111,7 +135,7 @@
         <div class="social-media col-12">
           <h2>Follow Me</h2>
           <div class="social-icons">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/__deepjagra/" target="_blank" aria-label="Instagram">
               <img src="images/instagram.png" alt="Instagram">
             </a>
             <a href="https://x.com/" target="_blank" aria-label="Twitter">
@@ -140,6 +164,9 @@
       <img class="sticky-image" src="images/sticky-image.png"/>
     </a>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
   
 
 </body>

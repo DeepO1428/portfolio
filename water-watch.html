@@ -4,6 +4,7 @@
   <title>Portfolio-Amandeep Kaur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
@@ -13,13 +14,21 @@
   <!-----header start here---->
   <header class="container">
     <a href="index.html"><img src="images/logo-dark.png" alt="Amandeep Kaur Logo"></a>
+  
+    <!-- 🔥 ADD THIS BLOCK -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
     <div class="row">
       <div class="col-12">
-        <nav class="navbar-header">
+        <nav class="navbar-header" id="navbar">
           <ul>
-            <li><a  href="index.html">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a class="active" href="mywork.html">My Projects</a></li>
+            <li><a href="mywork.html">My Projects</a></li>
             <li><a href="contact.html">Get in Touch</a></li>
           </ul>
         </nav>
@@ -82,6 +91,213 @@
   </div>
 </section>
 
+<!-- Project Details Section -->
+<section class="project-details bg-light water-bg">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-5 p-0">
+        <figure class="project-image"> 
+          <a href="#" target="_blank">
+            <img src="images/research.jpg" alt="Image">
+          </a>
+        </figure>
+      </div>
+      <div class="col-7 ">
+        <div class="project-text m-0">
+          <h1>Step 1: Research</h1>
+          <section class="research-cards">
+            <div class="container">
+              <div class="row">
+          
+                <!-- Card 1: Problem Statement -->
+                <div class="col-6">
+                  <div class="research-card">
+                    <h3>🧩 Problem Statement</h3>
+                    <ul>
+                      <li>Frequent travelers struggle to access clean drinking water due to safety concerns, misinformation, and lack of reliable, location-based information.</li>
+                  
+                  </div>
+                </div>
+          
+                <!-- Card 2: User Demographics -->
+                <div class="col-6">
+                  <div class="research-card">
+                    <h3>👤 User Demographics</h3>
+                    <ul>
+                      <li>Ages: 20–55, Male & Female</li>
+                      <li>Backgrounds: Students, working professionals</li>
+                      <li>Locations: Canada, India, Brazil</li>
+                      <li>1.7 billion people still use contaminated drinking water</li>
+                    </ul>
+                  </div>
+                </div>
+          
+                <!-- Card 3: Methodology -->
+                <div class="col-6">
+                  <div class="research-card">
+                    <h3>🔎 Methodology</h3>
+                    <p><strong>Mixed Method Research:</strong></p>
+                    <ul>
+                      <li>Qualitative: In-depth interviews (remote & in-person)</li>
+                      <li>Quantitative: Surveys with open/closed-ended questions</li>
+                    </ul>
+                  </div>
+                </div>
+          
+                <!-- Card 4: Key Insights -->
+                <div class="col-6">
+                  <div class="research-card">
+                    <h3>🔑 Key Insights</h3>
+                    <ul>
+                      <li>65% rely on bottled water while traveling</li>
+                      <li>85% want an app with reliable water quality info</li>
+                      <li>40% prefer bottled water for safety</li>
+                      <li>Concerns: tap water safety, health risks, misinformation</li>
+                    </ul>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          </section>
+         </div>
+      </div>
+
+      
+    </div>
+    
+  </div>
+</section>
+
+<!---pre work-->
+<section class="related-projects skills step2">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 p-0">
+        <h1>Step 2: Pre-Work</h1>
+        <p>Before moving into wireframing and prototyping, we conducted essential pre-work to better understand user needs and shape our solution. This stage involved three key activities:</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="model-content">
+          <a href="work-detail">
+            <img src="images/ux-storyboard.png" alt="UX Storyboard">
+            <h3>UX-Storyboard</h3>
+            <p>The storyboard visualized a user locating safe water using the app—reinforcing the importance of quick access and reliability in unfamiliar settings.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="model-content">
+          <a href="#">
+            <img src="images/userpersonas.png" alt="user persona">
+            <h3>User Personas</h3>
+            <p>These personas helped us empathize with users’ challenges—such as concerns about water safety, health issues from contaminated sources, and the need for fast, trustworthy information while traveling.</p>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-4">
+        <div class="model-content">
+          <a href="#">
+            <img src="images/core.png" alt="Hypothesis">
+          <h3>Core Hypothesis</h3>
+          <p>We explored how to help travelers quickly find and trust safe drinking water using verified data and user input.
+            Our hypothesis: a reliable, easy-to-use platform will reduce health risks and become a trusted travel companion.</p>
+          </a>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+</section>
+
+<!-- Project Details Section -->
+<section class="project-details bg-light water-bg lightt">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-7 ">
+        <div class="project-text m-0 wireframe">
+          <h1>Step 3: Wireframing</h1>
+          <p>Once we had a clear understanding of user needs, we moved on to wireframing. This step involved:</p>
+          <ul>
+              <li><strong>Sketching Initial Ideas:</strong> We brainstormed layout structures for an intuitive and accessible user interface.</li>
+              <li><strong>Creating Low-Fidelity Wireframes:</strong> Basic wireframes were designed in Figma to map out the app’s navigation and core features.</li>
+              <li><strong>Gathering Feedback:</strong> We conducted quick reviews to refine the wireframes before proceeding to prototyping.</li>
+          </ul>
+          <p>This stage ensured we had a solid foundation for usability before investing time into detailed designs.</p>
+          <button class="btn btn-portfolio"><a href="#" >Click the Image </a></button>
+  </div>
+      </div>
+
+      <div class="col-5 p-0">
+        <figure class="project-image"> 
+          <a href="https://balsamiq.cloud/snh0x3i/p7w188l/r75A9" target="_blank">
+            <img class="w-100" src="images/water-wireframe.png" alt="Image">
+          </a>
+        </figure>
+      </div>
+
+      
+    </div>
+    
+  </div>
+</section>
+
+
+
+<section class="related-projects skills step2">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 p-0">
+        <h1>Prototype & Usability Testing</h1>
+        <p>We developed high-fidelity prototypes to bring our designs to life. And also conducted usability testing with a diverse group of users to gather feedback on the prototype.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="model-content prototype">
+          <a href="https://www.figma.com/proto/Lwmt9UjWm45tw1ccqnPbBI/Water-Watch-Final-Proto?page-id=0%3A1&node-id=748-3280&node-type=frame&viewport=-4432%2C-1438%2C0.21&t=mx1LPhIChPC8l9S5-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=748%3A3303&show-proto-sidebar=1">
+            <img src="images/prototype-water.png" alt="water watch">
+            <h3>Prototyping</h3>
+            <ul>
+              <li><strong>Visual Design:</strong> Implemented UI components, colors, and typography based on accessibility guidelines.</li>
+              <li><strong>Interactive Elements:</strong> Enabled user interactions to test key features such as cycle tracking and AI-driven health recommendations.</li>
+              <li><strong>Usability Testing Preparation:</strong> Set up prototype tests to validate navigation flow and feature effectiveness.</li>
+          </ul>
+         
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="model-content prototype">
+          <a href="#">
+            <img src="images/testing.png" alt=" Usability Testing">
+            <h3>Testing & Refinements</h3>
+            <ul>
+              <li><strong>User Testing Sessions:</strong> Observed participants navigating the app and recorded their experiences.</li>
+              <li><strong>Feedback Analysis:</strong> Identified areas where users struggled, such as clarity of UI elements and onboarding instructions.</li>
+              <li><strong>Final Adjustments:</strong> Made improvements to design, accessibility, and functionality based on user feedback.</li>
+            </ul>
+            </a>
+
+        </div>
+      </div>
+
+
+     
+    </div>
+  </div>
+</section>
+
 
 <!-----key featurs starts here---->
 <section class="skills">
@@ -118,7 +334,7 @@
     <div class="row">
       <div class="col-4">
         <div class="model-content">
-          <a href="work-detail">
+          <a href="ella-details.html">
             <img src="images/project2.png" alt="Menstrual Tracking App">
             <h3>Menstrual Tracking App</h3>
           </a>
@@ -127,7 +343,7 @@
 
       <div class="col-4">
         <div class="model-content">
-          <a href="#">
+          <a href="job-bank.html">
             <img src="images/project3.png" alt="Job Bank Usability Testing">
             <h3>Job Bank Usability Testing</h3>
           </a>
@@ -169,7 +385,7 @@
         <div class="social-media col-12">
           <h2>Follow Me</h2>
           <div class="social-icons">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/__deepjagra/" target="_blank" aria-label="Instagram">
               <img src="images/instagram.png" alt="Instagram">
             </a>
             <a href="https://x.com/" target="_blank" aria-label="Twitter">
@@ -198,6 +414,9 @@
       <img class="sticky-image" src="images/sticky-image.png"/>
     </a>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
   
 
 </body>
